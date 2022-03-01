@@ -146,12 +146,6 @@ function onFieldClick(event) {
     }
 }
 
-function finishGame(win) {
-    isPlaying = false;
-    hideGameButton();
-    showPopUpWithText(win? 'You WON' : 'YOU LOST');
-}
-
 function playSound(sound) {
     sound.currentTime = 0;
     sound.play();
